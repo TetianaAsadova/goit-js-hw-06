@@ -1,4 +1,8 @@
 const formRef = document.querySelector('.login-form');
+const formObjekt = {
+    email: "",
+    password: "",
+}
 
 formRef.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -8,6 +12,11 @@ formRef.addEventListener('submit', (e) => {
     } else {
         const { email, password } = e.currentTarget.elements;
         console.log(`Email: ${email.value}, Password: ${password.value}`);
+        formObjekt.email = email.value;
+        formObjekt.password = password.value;
+        console.log(formObjekt);
         e.currentTarget.reset();
     }
 });
+
+ 

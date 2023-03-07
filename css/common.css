@@ -27,3 +27,7 @@ button {
   display: flex;
   list-style: none;
 }
+
+.item {
+  list-style: none;
+}

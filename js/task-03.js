@@ -15,7 +15,7 @@ const images = [
 
 const ulRef = document.querySelector(".gallery");
 
-const markupRef = images.map((image) => `<li><img url: ${image.url} alt: ${image.alt} /></li>`)
+const markupRef = images.map((image) => `<li><img src= ${image.url} alt= ${image.alt} width="320"/></li>`)
   .join("");
 
 ulRef.insertAdjacentHTML("beforeend", markupRef);
